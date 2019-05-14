@@ -1,10 +1,15 @@
 // color
 $color-primary: #0080b2;
 $color-span: #077daa;
-$color-label-font: rgb(165, 165, 165);
+$color-label-font: rgb(128, 128, 128);
 $color-table-font: rgb(90, 90, 90);
 
 // font
 $header-font-size: 5rem;
 $label-font-size: 1.2rem;
 $button-font-size: 1.4rem;
+
+// grid
+$grid-width: 70rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
