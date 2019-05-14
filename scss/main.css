@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Loto', sans-serif;
+}
+
+header {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+header i {
+  color: #0080b2;
+}
+
+header span {
+  color: #077daa;
+}
+
+header {
+  text-align: center;
+  padding: 3rem;
+}
+/*# sourceMappingURL=main.css.map */
