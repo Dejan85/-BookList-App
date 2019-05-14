@@ -6,7 +6,6 @@
 
     thead {
       display: block;
-      border-bottom: 1px solid gray;
       padding: 5rem 0 1rem 0;
       tr {
         display: block;
@@ -18,6 +17,31 @@
           float: left;
           width: 25%;
           margin-left: 1rem;
+        }
+      }
+    }
+
+    tbody {
+      display: block;
+      border-top: $color-table-font-dark;
+
+      tr {
+        display: block;
+        width: 100%;
+        @include clearfix;
+
+        &:nth-of-type(odd) {
+          background: $color-table-tbody-tr-background;
+        }
+
+        td {
+          float: left;
+          width: 20%;
+          padding: 1rem;
+
+          &:not(:first-child) {
+            margin-left: 4.5rem;
+          }
         }
       }
     }

@@ -5,3 +5,17 @@
   padding: 1rem;
   color: white;
 }
+.table-button {
+  display: flex;
+  background: red;
+  width: 1.8rem;
+  height: 1.8rem;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background: rgb(214, 7, 7);
+  }
+}
+
+// <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>

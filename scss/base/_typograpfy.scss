@@ -27,10 +27,25 @@ header {
     thead {
       tr {
         th {
-          color: $color-table-font;
+          color: $color-table-font-dark;
           font-size: $table-font-size;
-          font-weight: 400;
+          font-weight: 600;
           text-align: left;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        font-size: $table-font-size;
+        color: $color-table-font-light;
+        a {
+          text-align: center;
+          color: white;
+          font-size: 1rem;
+          text-decoration: none;
         }
       }
     }

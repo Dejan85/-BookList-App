@@ -40,10 +40,22 @@ header span {
 }
 
 .table table thead tr th {
-  color: #5a5a5a;
+  color: #363636;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 600;
   text-align: left;
+}
+
+.table tbody tr td {
+  font-size: 1.2rem;
+  color: #5a5a5a;
+}
+
+.table tbody tr td a {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 .primary-button {
@@ -52,6 +64,25 @@ header span {
   background-color: #0080b2;
   padding: 1rem;
   color: white;
+}
+
+.table-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: red;
+  width: 1.8rem;
+  height: 1.8rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.table-button:hover {
+  background: #d60707;
 }
 
 .form {
@@ -78,7 +109,6 @@ header span {
 
 .table table thead {
   display: block;
-  border-bottom: 1px solid gray;
   padding: 5rem 0 1rem 0;
 }
 
@@ -98,6 +128,36 @@ header span {
   float: left;
   width: 25%;
   margin-left: 1rem;
+}
+
+.table table tbody {
+  display: block;
+  border-top: #363636;
+}
+
+.table table tbody tr {
+  display: block;
+  width: 100%;
+}
+
+.table table tbody tr::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.table table tbody tr:nth-of-type(odd) {
+  background: #f3f2f3;
+}
+
+.table table tbody tr td {
+  float: left;
+  width: 20%;
+  padding: 1rem;
+}
+
+.table table tbody tr td:not(:first-child) {
+  margin-left: 4.5rem;
 }
 
 header {
