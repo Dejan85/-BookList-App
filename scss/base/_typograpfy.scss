@@ -21,3 +21,18 @@ header {
     color: $color-label-font;
   }
 }
+
+.table {
+  table {
+    thead {
+      tr {
+        th {
+          color: $color-table-font;
+          font-size: $table-font-size;
+          font-weight: 400;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

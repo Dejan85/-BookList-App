@@ -39,6 +39,13 @@ header span {
   color: gray;
 }
 
+.table table thead tr th {
+  color: #5a5a5a;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: left;
+}
+
 .primary-button {
   width: 100%;
   border: none;
@@ -67,7 +74,30 @@ header span {
 
 .table table {
   display: block;
-  outline: 1px solid green;
+}
+
+.table table thead {
+  display: block;
+  border-bottom: 1px solid gray;
+  padding: 5rem 0 1rem 0;
+}
+
+.table table thead tr {
+  display: block;
+  width: 100%;
+}
+
+.table table thead tr::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.table table thead tr th {
+  display: block;
+  float: left;
+  width: 25%;
+  margin-left: 1rem;
 }
 
 header {
