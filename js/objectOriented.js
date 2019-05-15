@@ -51,7 +51,7 @@ class UI {
 
   static showALert(message, className) {
     const div = document.createElement('div');
-    div.className = `alert alert-${className}`;
+    div.className = `alert ${className}`;
     div.appendChild(document.createTextNode(message));
     const container = document.querySelector('.col-1-of-1');
     const form = document.querySelector('.form');
@@ -83,9 +83,8 @@ document.querySelector('.form').addEventListener('submit', e => {
 
   // Validate
   if (title === '' || author === '' || isbn === '') {
-    UI.showALert('Please fill in all fields', 'danger');
+    return UI.showALert('Please fill in all fields', 'error');
   }
-
   //Instatieate book
   const book = new Book(title, author, isbn);
 
